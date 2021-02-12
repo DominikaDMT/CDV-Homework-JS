@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  outline: none;
+}
+
+div.info {
+  position: relative;
+  width: 100%;
+  margin: 40vh auto;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 3%;
+  text-align: center;
+}
+
+div p {
+  color: white;
+  font-size: 1.8rem;
+}
+
+button {
+  font-size: 1.6rem;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 5px 10px;
+  transition: 0.2s;
+  width: auto;
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #222;
+}

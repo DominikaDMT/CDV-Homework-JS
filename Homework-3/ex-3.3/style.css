@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: #222;
+}
+
+.wrapper {
+  margin: 10vh auto;
+  width: 80vw;
+  max-width: 650px;
+  height: 80vh;
+  text-align: center;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+section {
+  text-align: center;
+  margin: 3%;
+  padding: 3%;
+}
+
+h1 {
+  margin: 30px auto 20px auto;
+}
+
+section h3 {
+  margin-bottom: 20px;
+
+  font-weight: normal;
+  padding-bottom: 7px;
+  width: auto;
+}
+
+button {
+  display: block;
+  margin: 2% auto;
+  padding: 2px 7px;
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #222;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+li button {
+  display: inline;
+  margin: 1%;
+}
+
+button.bought {
+  background-color: rgba(54, 128, 93, 0.479);
+}
+
+button:hover {
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: rgb(129, 129, 129);
+  cursor: initial;
+  color: #222;
+}
+
+input {
+  padding: 5px;
+}
+
+li {
+  width: 80%;
+  margin: 2px auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li strong {
+  flex-grow: 1;
+  text-align: left;
+}
+
+li.active {
+  text-decoration: none;
+}
+
+li.done strong {
+  text-decoration: line-through;
+}
+
+#warning {
+  height: 40px;
+  color: rgb(180, 62, 62);
+  padding: 5px;
+  margin: 3%;
+}
