@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's draw something together</h1>
+
+      <section class="forms">
+        <form action="" id="dot">
+          <h3>Draw a dot</h3>
+          <label for="">
+            <p>Stroke Color:</p>
+            <select name="" id="dot-color-stroke">
+              <option value="#222222">black</option>
+              <option value="#4C6472">dark blue</option>
+              <option value="#57A4B1">blue</option>
+              <option value="#B0D894">green</option>
+              <option value="#FADE89">yellow</option>
+              <option value="#F95355">red</option>
+              <option value="#FFFFFF">none</option>
+            </select>
+          </label>
+          <label for="">
+            <p>Fill Color:</p>
+            <select name="" id="dot-color-fill">
+              <option value="#222222">black</option>
+              <option value="#4C6472">dark blue</option>
+              <option value="#57A4B1">blue</option>
+              <option value="#B0D894">green</option>
+              <option value="#FADE89">yellow</option>
+              <option value="#F95355">red</option>
+              <option value="#FFFFFF">none</option>
+            </select>
+          </label>
+          <label for="">
+            <p>Center point - X axis:</p>
+            <input type="number" id="dot-x" />
+          </label>
+          <label for="">
+            <p>Center point - Y axis</p>
+            <input type="number" id="dot-y" />
+          </label>
+          <label for="">
+            <p>Radius</p>
+            <input type="number" id="dot-r" />
+          </label>
+          <button type="submit" id="dot-button">Draw</button>
+        </form>
+
+        <form action="" id="rectangle">
+          <h3>Draw a rectangle</h3>
+          <label for="">
+            <p>Stroke Color:</p>
+            <select name="" id="rect-color-stroke">
+              <option value="#222222">black</option>
+              <option value="#4C6472">dark blue</option>
+              <option value="#57A4B1">blue</option>
+              <option value="#B0D894">green</option>
+              <option value="#FADE89">yellow</option>
+              <option value="#F95355">red</option>
+              <option value="#FFFFFF">none</option>
+            </select>
+          </label>
+          <label for="">
+            <p>Fill Color:</p>
+            <select name="" id="rect-color-fill">
+              <option value="#222222">black</option>
+              <option value="#4C6472">dark blue</option>
+              <option value="#57A4B1">blue</option>
+              <option value="#B0D894">green</option>
+              <option value="#FADE89">yellow</option>
+              <option value="#F95355">red</option>
+              <option value="#FFFFFF">none</option>
+            </select>
+          </label>
+          <label for="">
+            <p>Start point - X axis:</p>
+            <input type="number" id="rect-x-start" />
+          </label>
+          <label for="">
+            <p>Start point - Y axis</p>
+            <input type="number" id="rect-y-start" />
+          </label>
+          <label for="">
+            <p>Height:</p>
+            <input type="number" id="rect-height" />
+          </label>
+          <label for="">
+            <p>Width:</p>
+            <input type="number" id="rect-width" />
+          </label>
+          <button type="submit" id="rect-button">Draw</button>
+        </form>
+
+        <form action="" id="line">
+          <h3>Draw a line</h3>
+          <label for="">
+            <p>Stroke Color:</p>
+            <select name="" id="line-color">
+              <option value="#222222">black</option>
+              <option value="#4C6472">dark blue</option>
+              <option value="#57A4B1">blue</option>
+              <option value="#B0D894">green</option>
+              <option value="#FADE89">yellow</option>
+              <option value="#F95355">red</option>
+            </select>
+          </label>
+          <label for="">
+            <p>Start point - X axis:</p>
+            <input type="number" id="line-x-start" />
+          </label>
+          <label for="">
+            <p>Start point - Y axis</p>
+            <input type="number" id="line-y-start" />
+          </label>
+          <label for="">
+            <p>End point - X axis:</p>
+            <input type="number" id="line-x-end" />
+          </label>
+          <label for="">
+            <p>End point - Y axis</p>
+            <input type="number" id="line-y-end" />
+          </label>
+          <button type="submit" id="line-button">Draw</button>
+        </form>
+      </section>
+
+      <canvas id="canvas" width="800px" height="450px"></canvas>
+    </div>
+  </body>
+</html>
