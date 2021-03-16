@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+.wrapper {
+  width: 70vw;
+  max-width: 1000px;
+  height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.file-selector {
+  margin: 20px;
+  color: 222;
+  font-size: 40px;
+  font-weight: 200;
+  background-color: rgb(179, 221, 255);
+  border: none;
+  height: 40px;
+  width: 40px;
+  padding: 5px 20px;
+  border-radius: 50%;
+  transition: 0.2s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-selector:hover {
+  cursor: pointer;
+  background-color: rgb(113, 156, 192);
+  color: white;
+}
+
+hr {
+  width: 100%;
+}
+
+.music-gallery {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.audioWrapper {
+  max-width: 80%;
+  margin: 30px;
+}
+
+#file-input {
+  display: none;
+}
+
+p {
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
+}
