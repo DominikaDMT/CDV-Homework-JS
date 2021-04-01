@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-  width: 500px;
+  width: 520px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -61,7 +61,7 @@ p.alert {
 }
 
 .card {
-  min-width: 500px;
+  min-width: 520px;
   height: 200px;
   background-color: #fff;
   margin: 50px 20px;
